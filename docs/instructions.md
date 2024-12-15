@@ -594,3 +594,4 @@ Creating a HAOS VM using the above default settings
 - [Comment installer Proxmox sur Raspberry Pi 5 avec Pimox](https://www.domo-blog.fr/comment-installer-proxmox-sur-raspberry-pi-5-avec-pimox/)
 - [Glorious Proxmox Helper Script](https://github.com/the-polak/pimox/blob/main/pimox-post.md)
 - [Proxmox VE Helper-Scripts](https://community-scripts.github.io/ProxmoxVE/)
+- [Installing Home Assistant OS using Proxmox 8](https://community.home-assistant.io/t/installing-home-assistant-os-using-proxmox-8/201835)
