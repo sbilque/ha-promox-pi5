@@ -547,51 +547,9 @@ reboot
     ✓ Completed Post Install Routines
     ```
 
-## Installer Home Assistant
-
-Dans la console Shell de Proxmox, exécutez la commande :
-
-```sh
-bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/vm/pimox-haos-vm.sh)"
-```
-
-Suivez les instructions et sélectionnez les options par défaut pour un Raspberry Pi 8Go.
-
-![alt text](image-13.png)
-
-![alt text](image-14.png)
-
-```sh
-Using Default Settings
-Using HAOS Version: 14.0
-Using Virtual Machine ID: 100
-Using Hostname: haos14.0
-Allocated Cores: 2
-Allocated RAM: 4096
-Using Bridge: vmbr0
-Using MAC Address: 00:60:2F:6E:3E:43
-Using VLAN: Default
-Using Interface MTU Size: Default
-Start VM when completed: yes
-Creating a HAOS VM using the above default settings
- ✓ Using local for Storage Location.
- ✓ Virtual Machine ID is 100.
- ✓ https://github.com/home-assistant/operating-system/releases/download/14.0/haos_generic-aarch64-14.0.qcow2.xz
- ✓ Downloaded haos_generic-aarch64-14.0.qcow2.xz
- ✓ Extracted Disk Image
- ✓ Created HAOS VM (haos14.0)
- ✓ Started Home Assistant OS VM
- ✓ Completed Successfully!
- ```
-
- Allez dans la console de la machine virtuelle et récupérez l'adresse IP de la machine :
-
- ![alt text](image-15.png)
-
 ## Références
 
 - [Installing Proxmox on Raspberry Pi 4 and 5](https://gist.github.com/enjikaka/52d62c9c5462748dbe35abe3c7e37f9a)
 - [Comment installer Proxmox sur Raspberry Pi 5 avec Pimox](https://www.domo-blog.fr/comment-installer-proxmox-sur-raspberry-pi-5-avec-pimox/)
 - [Glorious Proxmox Helper Script](https://github.com/the-polak/pimox/blob/main/pimox-post.md)
 - [Proxmox VE Helper-Scripts](https://community-scripts.github.io/ProxmoxVE/)
-- [Installing Home Assistant OS using Proxmox 8](https://community.home-assistant.io/t/installing-home-assistant-os-using-proxmox-8/201835)
