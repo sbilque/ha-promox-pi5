@@ -80,8 +80,8 @@
     *** A reboot is needed to activate the new firmware
     ```
 
-2. Exécutez la commande `sudo rpi-eeprom-config -e`
-3. Ajoutez la ligne `SDRAM_BANKLOW=1` à la fin, si nécessaire, pour obtenir le contenu suivant puis sauvez le fichier :
+1. Exécutez la commande `sudo rpi-eeprom-config -e`
+1. Ajoutez la ligne `SDRAM_BANKLOW=1` à la fin, si nécessaire, pour obtenir le contenu suivant puis sauvez le fichier :
 
     ```ini
     [all]
@@ -91,7 +91,7 @@
     SDRAM_BANKLOW=1
     ```
 
-4. La commande doit ensuite afficher un résultat de la forme suivante
+1. La commande doit ensuite afficher un résultat de la forme suivante
 
     ```sh
     Updating bootloader EEPROM
