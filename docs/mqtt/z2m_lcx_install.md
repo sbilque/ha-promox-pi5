@@ -131,6 +131,7 @@
 
     ````yaml
     version: 4
+    permit_join: true
     frontend:
       enabled: true
       port: 9442
@@ -149,7 +150,9 @@
       # Emplacement de SLZB-06M
       port: tcp://SLZB-06M.home:6638
       baudrate: 115200
-      adapter: ezsp
+      adapter: ember
+      # Optional: RTS / CTS Hardware Flow Control for serial port (default: false)
+      rtscts: true
       # Désactiver la led verte ?
       disable_led: false
     advanced:
@@ -157,9 +160,9 @@
       transmit_power: 20
       # Force l'utilisation du channel Zigbee à 25 au lieu de 11
       channel: 25
-      pan_id: GENERATE
-      ext_pan_id: GENERATE
-      network_key: GENERATE
+      pan_id: ***REDACTED***
+      ext_pan_id: ***REDACTED***
+      network_key: ***REDACTED***
    ````
 
 1. Démarrer Zigbee2MQTT avec la commande :
